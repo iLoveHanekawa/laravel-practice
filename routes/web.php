@@ -24,5 +24,5 @@ Route::get('/user', function () {
 });
 
 Route::get('/user-page', function () {
-    return view('user');
+    return view('user', ['name' => 'Arjun']);
 });
