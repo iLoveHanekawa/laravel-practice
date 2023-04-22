@@ -1,3 +1,7 @@
+@php
+    $names = ['Arjun', 'Rohit']
+@endphp
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,6 +11,10 @@
         <title>Dashboard</title>
     </head>
     <body>
-        @include('content')
+        {{-- @include('content', ['name' => 'Arjun']) --}}
+        {{-- @foreach ($names as $name )
+            @include('content', ['name' => $name])
+        @endforeach --}}
+        @each('content', $names, 'name')
     </body>
 </html>
