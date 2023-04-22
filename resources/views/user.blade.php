@@ -14,5 +14,10 @@
             const app = {{ Js::from("hello") }}
             console.log(app)
         </script>
+        @if ($friends > 0)
+            <div>Hi friends </div>
+        @else
+            <div>Hello to me I guess?</div>
+        @endif
     </body>
 </html>
