@@ -1,6 +1,7 @@
 @php
     $count = 1;
     $records = [['firstName' => 'arjun'], ['firstName' => 'rohit']];
+    $theme = 'dark'
 @endphp
 
 <!DOCTYPE html>
@@ -11,7 +12,7 @@
         <title>@yield('title')</title>
         @vite('resources/css/app.css')
     </head>
-    <body>
+    <body @class(['text-white' => $theme == 'dark', 'bg-black' => $theme == 'dark'])>
         @verbatim
             <div class = 'py-4 bg-red-300 text-white'>Hello {{ $name }}</div>
         @endverbatim
