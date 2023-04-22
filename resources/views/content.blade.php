@@ -1,3 +1,13 @@
+@push('stack')
+    <div>Hello dashboard page.</div>
+@endpush
+
+@push('stack')
+    @once
+        <div>This got stacked under.</div>
+    @endonce
+@endpush
+
 <!DOCTYPE html>
 <html>
     <head>

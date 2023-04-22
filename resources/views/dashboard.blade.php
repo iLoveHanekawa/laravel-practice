@@ -12,9 +12,10 @@
     </head>
     <body>
         {{-- @include('content', ['name' => 'Arjun']) --}}
-        {{-- @foreach ($names as $name )
+        @foreach ($names as $name )
             @include('content', ['name' => $name])
-        @endforeach --}}
-        @each('content', $names, 'name')
+        @endforeach
+        {{-- @each('content', $names, 'name') --}}
+        @stack('stack')
     </body>
 </html>
