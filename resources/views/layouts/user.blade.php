@@ -1,3 +1,8 @@
+@php
+    $count = 1;
+    $records = [['firstName' => 'arjun'], ['firstName' => 'rohit']];
+@endphp
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,5 +30,21 @@
         @empty($user)
             <div>No user here</div>
         @endempty
+        <div>@yield('working', 'Not working')</div>
+        <div class = 'text-lg text-red-400'>@yield('nested', 'Nested not working')</div>
+        <div>{{ $count }}</div>
+        @switch($count)
+            @case(0)
+                <div>Value of count is 0</div>
+                @break
+            @default
+                <div>Value of count is {{ $count }}</div>
+        @endswitch
+        @for ($i = 0; $i < 5; $i++)
+            <div>hello</div>
+        @endfor
+        @foreach ($records as $record)
+            <div>{{ $record['firstName'] }}</div>
+        @endforeach
     </body>
 </html>
