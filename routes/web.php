@@ -34,3 +34,7 @@ Route::get('/dashboard', function() {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/artists', function () {
+    return view('artists');
+});

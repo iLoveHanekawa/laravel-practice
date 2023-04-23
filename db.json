@@ -1,0 +1,44 @@
+{
+    "rappers": [
+        {
+            "name": "Lil Baby",
+            "description": "Dominique Armani Jones, better known by his stage name Lil Baby, is an American rapper, singer, and songwriter from Atlanta, Georgia. He rose to mainstream fame in 2017 following the release of his mixtape Perfect Timing."
+        },
+        {
+            "name": "Roddy Ricch",
+            "description": "Rodrick Wayne Moore Jr., known professionally as Roddy Ricch, is an American rapper, singer, and songwriter from Compton, California. He gained traction in 2018 with his mixtape Feed Tha Streets II and later rose to mainstream fame with his single The Box."
+        },
+        {
+            "name": "DaBaby",
+            "description": "Jonathan Lyndale Kirk, better known as DaBaby, is an American rapper and songwriter from Charlotte, North Carolina. He is best known for his hit single Suge, which peaked at number seven on the US Billboard Hot 100."
+        },
+        {
+            "name": "Young Nudy",
+            "description": "Quantavious Tavario Thomas, known professionally as Young Nudy, is an American rapper and songwriter from Atlanta, Georgia. He is best known for his mixtapes Slimeball and Slimeball 2, as well as his collaborations with rapper 21 Savage."
+        },
+        {
+            "name": "Travis Scott",
+            "description": "Jacques Bermon Webster II, known professionally as Travis Scott, is an American rapper, singer, songwriter, and record producer from Houston, Texas. He rose to fame in 2015 with his mixtape Days Before Rodeo and later gained commercial success with his album Astroworld."
+        },
+        {
+            "name": "Pop Smoke",
+            "description": "Bashar Barakah Jackson, known professionally as Pop Smoke, was an American rapper, singer, and songwriter from Brooklyn, New York. He rose to fame in 2019 with his single Welcome to the Party and later gained critical acclaim with his album Meet the Woo 2."
+        },
+        {
+            "name": "Young Thug",
+            "description": "Jeffrey Lamar Williams, known professionally as Young Thug, is an American rapper, singer, and songwriter from Atlanta, Georgia. He is known for his unique vocal style and has collaborated with a number of high-profile artists, including Lil Wayne, Future, and Travis Scott."
+        },
+        {
+            "name": "Lil Uzi Vert",
+            "description": "Symere Woods, known professionally as Lil Uzi Vert, is an American rapper, singer, and songwriter from Philadelphia, Pennsylvania. He gained fame with his mixtape Luv Is Rage and later rose to prominence with his debut studio album Luv Is Rage 2."
+        },
+        {
+            "name": "Gunna",
+            "description": "Sergio Giavanni Kitchens, known professionally as Gunna, is an American rapper, singer, and songwriter from College Park, Georgia. He gained recognition with his mixtape Drip Season 3 and later achieved commercial success with his debut studio album Drip or Drown 2."
+        },
+        {
+            "name": "Future",
+            "description": "Nayvadius DeMun Wilburn, known professionally as Future, is an American rapper, singer, and songwriter from Atlanta, Georgia. He rose to fame with his mixtapes Monster and Beast Mode and later gained critical acclaim with his albums DS2 and Evol."
+        }
+    ]
+}

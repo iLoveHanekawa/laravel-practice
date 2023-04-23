@@ -18,10 +18,20 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/user/{id}', function (string $id) {
-    return $id;
-})->name('user');
+// Route::get('/user/{id}', function (string $id) {
+//     return $id;
+// })->name('user');
 
-Route::get('/user/profile', function () {
-    return 'admin route';
-})->name('admin');
+// Route::get('/user/profile', function () {
+//     return 'admin route';
+// })->name('admin');
+
+Route::prefix('/user')->group(function (){
+    Route::get('/{id}', function (string $id) {
+        return $id;
+    })->name('user');
+    
+    Route::get('/profile', function () {
+        return 'admin route';
+    })->name('admin');
+});
