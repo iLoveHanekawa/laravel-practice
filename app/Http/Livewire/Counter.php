@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use Livewire\Livewire;
 
 class Counter extends Component
 {
@@ -15,6 +16,10 @@ class Counter extends Component
 
     public function increment() {
         $this->count += 1;
+    }
+
+    public function navigate() {
+        return redirect()->to(route('admin'));
     }
 
     public function render()
