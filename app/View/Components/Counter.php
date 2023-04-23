@@ -5,6 +5,7 @@ namespace App\View\Components;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use Illuminate\Support\Facades\Log;
 
 class Counter extends Component
 {
@@ -20,6 +21,10 @@ class Counter extends Component
         string $lastName) {
             $this->lastName = $lastName; //property has to match the argument name
         }
+
+    public function increment() {
+        $this->count += 1;
+    }
 
     /**
      * Get the view / contents that represent the component.

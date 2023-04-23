@@ -2,4 +2,5 @@
     Count = {{ $count }}
     <div>First Name is {{ $firstName }}</div>
     <div>Last Name is {{ $lastName }}</div>
+    <button onclick="{{ $increment }}">Increment</button>
 </div>
