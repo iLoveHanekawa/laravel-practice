@@ -8,6 +8,6 @@
     </head>
     <body>
         <div>Hello</div>
-        <x-counter count=10/> {{-- count = 0 doesn't work wow. WOW ---}}
+        <x-counter count=10 first-name="Arjun" last-name="Tanwar"/> {{-- count = 0 doesn't work wow. WOW ---}}
     </body>
 </html>
