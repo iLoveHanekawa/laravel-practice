@@ -5,17 +5,14 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Illuminate\Support\Facades\Http;
 
-
 class Rappers extends Component
 {
+    public string $name = '';
+    public string $description = '';
 
-    public array $rappers = [];
-
-    public function mount () {
-        $response = Http::get('http://127.0.0.1:8000/api/rappers');
-        if($response->ok()) {
-            $this->rappers = json_decode($response->body(), true);
-        }
+    public function mount (string $name, string $description) {
+        $this->name = $name;
+        $this->description = $description;
     }
 
     public function render()

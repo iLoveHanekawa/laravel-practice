@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Http;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,4 +40,10 @@ Route::get('/artists', function () {
     return view('artists');
 });
 
-Route::view('/hello', 'hello');
+Route::get('/artists', function () {
+    $response = Http::get('http://127.0.0.1:8000/api/rappers');
+    if($response->ok()) {
+        return view('artists', ['rappers' => json_decode($response->body(), true)]);
+    }
+    return view('artists', ['rapper' => []]);
+});

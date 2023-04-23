@@ -9,7 +9,9 @@
     </head>
     <body>
         <div class = 'bg-black text-white'>Hello</div>
-        <livewire:rappers />
+        @foreach ($rappers as $rapper)
+            <livewire:rappers :name="$rapper['name']" :description="$rapper['description']" />
+        @endforeach
         @livewireScripts
     </body>
 </html>
