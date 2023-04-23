@@ -2,7 +2,6 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -34,4 +33,10 @@ Route::prefix('/user')->group(function (){
     Route::get('/profile', function () {
         return 'admin route';
     })->name('admin');
+});
+
+Route::get('/rappers', ['App\Http\Controllers\RapperController', 'getrappers']);
+
+Route::get('/hello', function () {
+    return 'Arjun';
 });

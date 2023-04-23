@@ -12,7 +12,7 @@ class Rappers extends Component
     public array $rappers = [];
 
     public function mount () {
-        $response = Http::get('http://localhost:4000/rappers');
+        $response = Http::get('http://127.0.0.1:8000/api/rappers');
         if($response->ok()) {
             $this->rappers = json_decode($response->body(), true);
         }

@@ -38,3 +38,5 @@ Route::get('/about', function () {
 Route::get('/artists', function () {
     return view('artists');
 });
+
+Route::view('/hello', 'hello');
