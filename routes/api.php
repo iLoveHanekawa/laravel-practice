@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/user/{id}', function (string $id) {
     return $id;
-});
+})->name('user');
 
 Route::get('/user/profile', function () {
     return 'admin route';

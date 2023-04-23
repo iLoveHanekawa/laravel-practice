@@ -20,6 +20,13 @@ class Counter extends Component
 
     public function navigate() {
         return redirect()->to(route('admin'));
+        // return to_route('admin');
+    }
+
+    public function navigateToUserId() {
+        $id = 10;
+        // return redirect()->to("/api/user/{$id}", 302);
+        return to_route('user', ['id' => $id]);
     }
 
     public function render()
