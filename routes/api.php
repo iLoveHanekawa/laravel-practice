@@ -38,5 +38,5 @@ Route::prefix('/user')->group(function (){
 Route::get('/rappers', ['App\Http\Controllers\RapperController', 'getrappers']);
 
 Route::get('/hello', function () {
-    return 'Arjun';
+    return 'Hello Arjun';
 });

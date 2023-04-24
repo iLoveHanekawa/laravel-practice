@@ -41,9 +41,13 @@ Route::get('/artists', function () {
 });
 
 Route::get('/artists', function () {
-    $response = Http::get('http://127.0.0.1:8000/api/rappers');
+    $response = Http::get('http://127.0.0.2/api/rappers');
     if($response->ok()) {
         return view('artists', ['rappers' => json_decode($response->body(), true)]);
     }
     return view('artists', ['rapper' => []]);
+});
+
+Route::get('/hello', function() {
+    return view('hello');
 });

@@ -8,7 +8,7 @@
         @livewireStyles
     </head>
     <body>
-        <div class = 'bg-black text-white'>Arjun</div>
+        <div class = 'bg-black text-white'>Greeting page</div>
         <livewire:hello />
         @livewireScripts
     </body>
